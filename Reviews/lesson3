@@ -60,7 +60,7 @@ points:::
   on these
   Inline block elements on the other hand can be sized; can be given width, height, margin
 
-    
+
 9 Explain the 4 position property values and their differences.
 10 What are the values of the float property and how do they affect the alignment of elements on the page?
 11 How does the clear property interact with float?
