@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bonbon|Doppio+One|Montserrat&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+#left-panel{
+    width: 30%;
+    float: left;
+    padding: 10% 0 10% 4%;
+}
+
+#right-panel{
+    width:60%;
+    float: left;
+    padding:2% 0;
+
+}
+
+#img-div{
+    position: relative;
+}
+
+#img-hover-div{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    border: 3px solid red;
+    background-color: white;
+    padding: 2%;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+}
+
+#info-div{
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    z-index: 999;
+    background-color: maroon;
+    padding: 5px 10px;
+    margin-right: 10px;
+    height: 520px;
+    width: 800px;
+    overflow-x: hidden;
+    border: solid 1px whitesmoke;
+}
+#right-panel:hover > #img-div {
+    opacity: 0;
+}
+#right-panel:hover > #info-div {
+    opacity: 1;
+
+}
+header{
+    margin: 1px 0 20px ;
+    text-align: center;
+}
+footer{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    text-align: center;
+    width:100%;
+}
+.blocks{
+    width:50%;
+    float: left;
+    bottom: 0px;
+
+}
+#bg-img{
+    margin: 7% 2%;
+    opacity: 0.5;
+    border: solid white;
+}
+.col-full{
+    float: left;
+    width: 100%;
+}
+#title-div{
+    font-family: 'Bonbon', cursive;
+    font-size: 3vw;
+    margin:0;
+}
+#name-div{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    margin:0;
+}
+#desc{
+    font-family: 'Doppio One', sans-serif;
+    font-size: 1.5vw;
+    font-style: italic;
+}
+#validator-div{
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+}
+#html-validator{
+    float: left;
+    margin-right:5px;
+}
+#css-validator{
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: aqua;
+}
+a:hover{
+    text-decoration: underline;
+}
+p:first-letter, h1:first-letter, h2:first-letter {
+    font-size: 1.5em;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 2px;
+}
+dt{
+    color: yellow;
+}
+ol{
+    display:flex;
+    flex-direction: column-reverse;
+}

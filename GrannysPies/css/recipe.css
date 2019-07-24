@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Bonbon|Doppio+One|Montserrat&display=swap');
+
+body{
+    background-color: white;
+    color:#404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+    background-image: url('../images/silverware.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding:5px;
+}
+a{
+    color: #A4A400;
+}
+header{
+    position: relative;
+    margin-bottom: 50px;
+}
+header > h1{
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);;
+
+}
+h1, h2, h3, h4, h5, h6{
+    color:#A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial,sans-serif;
+    text-decoration: underline;
+    font-size: 18pt;
+    letter-spacing: 0.25em;
+    background-size: contain;
+    display: inline-block;
+}
+section{
+    border-bottom: solid 1px gray;
+}
+#section_five{
+    border: none;
+}
+blockquote{
+    background-color: #FFFFA8;
+    font-style: italic;
+    padding: 1px 3px;
+}
+footer{
+    float: right;
+}
+#validator-div{
+    bottom: 0;
+    left: 5%;
+}
+#html-validator{
+    float: left;
+    margin-right:5px;
+}
+#css-validator{
+    float: left;
+}
+ul {
+    list-style-image: url('../images/pie_bullet.png');
+}
+
+#cross_thru{
+    text-decoration: line-through;
+}
+/*Index Page Elements*/
+
+#left-panel{
+    width: 40%;
+    float: left;
+    padding: 10% 0 10% 4%;
+    border: none;
+}
+
+#right-panel{
+    width:50%;
+    float: left;
+    padding:2% 0;
+    border: none;
+
+}
+
+#title-div{
+    font-family: 'Doppio One', sans-serif;
+    font-size: 3vw;
+}
+#name-div{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    width: 300px;
+}
+#index_body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/background.gif'),url('../images/background2.gif') ;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding:5px;
+}
