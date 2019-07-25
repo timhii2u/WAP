@@ -47,9 +47,7 @@ header{
 #left_panel_cont{
     column-count: 2;
     column-gap: 2%;
-    column-width: .47em;
-    padding: 8px;
-
+    padding: 0 3%;
 }
 
 .review{
@@ -58,10 +56,19 @@ header{
     border: 2px solid gray;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 20pt;
+    display: inline-block;
 }
 
-#left_panel_cont > p > img{
+.review > q{
+    padding: 8px;
+}
+
+.pundit{
+    overflow: hidden;
+    margin-bottom: 20pt;
+    width: 80%;
+}
+#left_panel_cont > div > p > img{
     margin-right: 5px;
     float: left;
 }
