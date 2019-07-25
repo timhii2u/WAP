@@ -69,6 +69,7 @@ header{
 
 .pundit{
     overflow: hidden;
+    margin-top: 0;
     margin-bottom: 20pt;
     width: 80%;
 }
