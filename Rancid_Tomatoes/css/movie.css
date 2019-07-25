@@ -5,11 +5,11 @@ body{
     margin: 0;
     padding:0;
 }
+
 header{
     text-align: center;
     background-image: url("../images/bannerbg.png");
     background-repeat: repeat-x;
-
 }
 
 #mv_title{
@@ -27,17 +27,21 @@ header{
     border: solid 4px gray;
     overflow: hidden;
 }
+
 #left_panel{
     max-width: 550px;
     margin-right: auto;
 }
+
 #left_panel_hd {
     background-image: url("../images/rbg.png");
     background-repeat: repeat-x;
 }
+
 #left_panel_hd > img{
     vertical-align: bottom;
 }
+
 #left_panel_hd > span{
     font-size: 48pt;
     color: red;
@@ -68,39 +72,46 @@ header{
     margin-bottom: 20pt;
     width: 80%;
 }
+
 #left_panel_cont > div > p > img{
     margin-right: 5px;
     float: left;
 }
+
 #right_panel{
     float: right;
     width: 250px;
     background-color: #A2B964;
 }
+
 #right_panel dl {
     padding: 10pt;
     font-size: 8pt;
     font-family: Arial, sans-serif;
 }
+
 #right_panel dt {
     margin-top: 10pt;
     font-weight: bold;
-    font-family: Arial, sans-serif;
 }
+
 #right_panel ul {
     list-style: none;
 }
+
 #content_footer{
     background-color: #A2B964;
     padding: 5px;
     clear: both;
     text-align: center;
 }
+
 #validators{
    position: fixed;
     bottom:0;
     right:0;
 }
+
 #validators img{
     opacity: 0.5;
 }
