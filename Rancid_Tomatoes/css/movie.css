@@ -48,10 +48,17 @@ header{
     font-weight: bold;
 }
 
-#left_panel_cont{
+/*#left_panel_cont{
     column-count: 2;
     column-gap: 2%;
     padding: 0 3%;
+}*/
+#left_panel_cont{
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-column-gap: 2%;
+    padding: 0 3%;
+
 }
 
 .review{
@@ -60,7 +67,6 @@ header{
     border: 2px solid gray;
     border-radius: 10px;
     overflow: hidden;
-    display: inline-block;
 }
 
 .review > q{
@@ -71,7 +77,6 @@ header{
     overflow: hidden;
     margin-top: 0;
     margin-bottom: 20pt;
-    width: 80%;
 }
 
 #left_panel_cont > div > p > img{
