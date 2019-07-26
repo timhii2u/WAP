@@ -1,0 +1,56 @@
+*{
+    padding: 1px;
+    box-sizing: border-box;
+}
+header{
+    background-color: cadetblue;
+}
+
+footer, nav{
+    color: white;
+    background-color: darkslategrey;
+    padding: 1px;
+}
+nav ul{
+    text-align: left;
+    margin: 0 10px;
+}
+nav li{
+    display: inline-block;
+    border-right: 1px solid black;
+    padding: 5px 15px;
+}
+#column1{
+    background-color: dimgray;
+}
+#column2{
+    background-color: darkgray;
+}
+#column3{
+    background-color: lightgray;
+}
+#column1,#column2,#column3{
+    height: 300px;
+    padding: 2%;
+}
+
+#validators{
+    position: fixed;
+    bottom:0;
+    right:0;
+}
+
+#validators img{
+    opacity: 0.5;
+}
+
+
+@media screen and (max-device-width: 600px){
+    #column1,#column2{
+        width:50%;
+    }
+
+    #column3{
+        width:100%;
+    }
+}
