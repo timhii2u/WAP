@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays in JS</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <script>
+
+        /* runs test to see if expected argument is === to value returned by function2test argument */
+        function myFunctionTest(expected, found) {
+            if (expected === found) {
+                return "TEST SUCCEEDED";
+            } else {
+                return "TEST FAILED.  Expected " + expected + " found " + found;
+            }
+        }
+
+        /* runs test to see if two arrays are equal */
+        function myArrayTest(array1, array2) {
+            let is_same = array1.length == array2.length && array1.every(function(element, index) {
+                return element === array2[index];
+            });
+            if (is_same) {
+                return "TEST SUCCEEDED";
+            } else {
+                return "TEST FAILED.  Expected " + array1 + " found " + array2;
+            }
+        }
+
+
+        /*sum returns the sum of all numbers in the array*/
+
+        function sum(arr){
+
+            return arr.reduce(function (seed,elem){
+                return seed + elem;
+            });
+        }
+
+
+        console.log("Expected output of sum([1,2,3,4]) is 10  " + myFunctionTest(10, sum([1,2,3,4])));
+
+
+        /*multiply returns the product of all numbers in the array*/
+
+        function multiply(arr){
+
+            return arr.reduce(function (seed,elem){
+                return seed * elem;
+            });
+        }
+
+
+        console.log("Expected output of multiply([1,2,3,4]) is 24  " + myFunctionTest(24, multiply([1,2,3,4])));
+
+        /*reverse reverses the string it has been passed*/
+
+        function reverse(str) {
+
+            return str.length <= 1? str : reverse(str.substring(1))+ str.charAt(0);
+        }
+
+        console.log("Expected output of reverse(\"jag testar\") is ratset gaj  " + myFunctionTest("ratset gaj", reverse("jag testar")));
+
+
+
+        /*findLongestWord takes an array of words and returns the length of the longest one.*/
+
+        function findLongestWord(arr) {
+
+            return arr.reduce(function (seed,elem) {
+                return elem.length > seed.length ? elem : seed;
+            }).length;
+        }
+
+        console.log("Expected output of findLongestWord([\"Inconsequential\",\"parasitic\",\"Hypothetically\",\"Incomprehensibilities\"]) is 21  " + myFunctionTest(21, findLongestWord(["Inconsequential","parasitic","Hypothetically","Incomprehensibilities"])));
+
+        /*filterLongWords takes an array of words and an integer i and returns the array of words that are longer than i.*/
+
+        function filterLongWords(arr,i) {
+
+            return arr.filter(function (elem) {
+                return elem.length > i ;
+            });
+        }
+
+        console.log("Expected output of filterLongWords([\"water\",\"the\",\"plants\",\"frequently\"],5) is [\"plants\",\"frequently\"]  " + myArrayTest(["plants","frequently"], filterLongWords(["water","the","plants","frequently"],5)));
+
+
+    </script>
+</head>
+<body>
+<h1>Look in the Chrome developer console to see the output. CTRL_SHIFT_J</h1>
+</body>
+</html>
