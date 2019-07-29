@@ -82,5 +82,4 @@ window.onload = function () {
             txtBox.value = text;
         }
     };
-
 };

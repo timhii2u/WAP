@@ -6,11 +6,12 @@ body{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 #week1, #week2{
     width:45%;
     float: left;
-    margin-bottom: 20px;
+    margin: 5px 5px 20px 5px;
 }
 ul{
     display: inline-block;
