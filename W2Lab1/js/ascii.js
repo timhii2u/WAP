@@ -84,7 +84,7 @@ window.onload = function () {
         function changeFont() {
             text_area.className = fontsize.value.split(" ")[0];
         }
-        
+
         function changeSpeed() {
             if(turbo.checked){
                 clearInterval(timer);
