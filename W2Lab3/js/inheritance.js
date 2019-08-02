@@ -16,6 +16,7 @@
 
         };
 
+        console.log("******* Filter for String *********");
         console.log("This house is not nice!".filter('not'));
 
         Array.prototype.bubbleSort = function() {
@@ -32,7 +33,6 @@
                 for(let j =0; j<arr.length-i;j++) {
 
                     if (arr[j] < arr[j-1]) {
-                        console.log(arr[j]);
                         swap(j);
                     }
                 }
@@ -43,6 +43,7 @@
 
 
         };
+        console.log("******* BubbleSort *********");
 
         console.log([6,4,0, 3,-2,1].bubbleSort());
 
