@@ -25,15 +25,11 @@
                 return this;
             }
 
-            let swap = function(b){
-                [arr[b-1],arr[b]]=[arr[b],arr[b-1]];
-            };
-
             for(let i =0; i<this.length;i++){
                 for(let j =0; j<arr.length-i;j++) {
 
-                    if (arr[j] < arr[j-1]) {
-                        swap(j);
+                    if (arr[j] > arr[j+1]) {
+                        [arr[j],arr[j+1]]=[arr[j+1],arr[j]];
                     }
                 }
 
