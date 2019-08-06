@@ -102,7 +102,8 @@
         if(turbo.checked){
             clearInterval(timer);
             timer = null;
-            timer = setInterval(startAnimation, 50, arr);
+            timer
+                = setInterval(startAnimation, 50, arr);
 
         }else{
             clearInterval(timer);
