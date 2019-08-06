@@ -8,11 +8,16 @@ body{
     margin-right: auto;
     padding: 10px;
 }
-#week1, #week2{
+.block{
     width:45%;
     float: left;
     margin: 5px 5px 20px 5px;
 }
+/*#week1, #week2, #week3{
+    width:45%;
+    float: left;
+    margin: 5px 5px 20px 5px;
+}*/
 ul{
     display: inline-block;
     text-align: start;
