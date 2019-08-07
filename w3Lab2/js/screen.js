@@ -19,7 +19,8 @@ $(function () {
 
     $("#start").on('click',grow);
 
-    $("body").on('hover','.circles',hov);
+    $("body").on('mouseover','.circles',hov);
+    $("body").on('mouseleave','.circles',nor);
 
     $("body").on('click','.circles',remve);
 
@@ -78,6 +79,9 @@ $(function () {
     }
     function hov() {
         $(this).css('opacity','0.7');
+    }
+    function nor() {
+        $(this).css('opacity','1');
     }
 
     function randomNum(min, max) { // min and max included
