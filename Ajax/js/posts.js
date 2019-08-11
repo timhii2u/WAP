@@ -46,9 +46,6 @@ $(function () {
 
     }
 
-    function failFunc(data) {
-        alert(data.message);
-    }
 
     $('#display').on("click", 'input', function () {
 
@@ -69,4 +66,7 @@ $(function () {
             .fail(failFunc);
     });
 
+    function failFunc(xhr, status, exception) {
+        console.log(xhr, status, exception);
+    }
 });
