@@ -1,0 +1,13 @@
+body{
+    padding: 10px;
+}
+.comments > div{
+    background-color: darkviolet;
+    padding:10px;
+    color:white;
+}
+#loader{
+    position: absolute;
+    left:50%;
+    top:50%
+}
