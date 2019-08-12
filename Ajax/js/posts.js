@@ -13,7 +13,7 @@ $(function () {
     $('#submitBtn').on("click", function () {
         $('#display').empty();
         let id = $('[name=userid]').val();
-        $.get('http://jsonplaceholder.typicode.com/users',{"id": id})
+        $.get('https://jsonplaceholder.typicode.com/users',{"id": id})
             .done(successFunc)
             .fail(failFunc);
     });
@@ -29,7 +29,7 @@ $(function () {
         det.append('<h2>BLOGGER\'S DETAILS</h2>');
         det.append('<p><b>Name:</b> '+ data[0].name + ' '+'<b>Email:</b> '+ data[0].email + '<b> Address:</b> '+ data[0].address.street+', '+ data[0].address.city+', '+ data[0].address.suite + '</p>');
         det.append('<h2>POSTS</h2>');
-        $.get('http://jsonplaceholder.typicode.com/posts',{"userId":data[0].id})
+        $.get('https://jsonplaceholder.typicode.com/posts',{"userId":data[0].id})
             .done(posts_successFunc)
             .fail(failFunc);
     }
@@ -50,7 +50,7 @@ $(function () {
     $('#display').on("click", 'input', function () {
 
         let post_id = this.name;
-        $.get('http://jsonplaceholder.typicode.com/comments',{"postId": post_id})
+        $.get('https://jsonplaceholder.typicode.com/comments',{"postId": post_id})
             .done(data => {
                 let comments = $('<div>');
 
